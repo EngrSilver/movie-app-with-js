@@ -160,7 +160,7 @@ body {
       rgba(0, 0, 0, 0.5) 100%
     ),
     url("./images/test-movie.jpg");
-  background-repeat: round;
+  background-repeat: no-repeat;
   background-size: cover;
 
   border-bottom: 1px solid rgb(71, 71, 71);
