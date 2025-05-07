@@ -14,7 +14,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   /* filter: brightness(80%); */
-  height: 100vh;
+  height: fit-content;
+  position: relative;
 }
 .hidden {
   display: none;
@@ -199,4 +200,11 @@ body {
 
 .style {
   color: rgb(185, 177, 177);
+}
+.footer {
+  margin-top: 30px;
+  z-index: 222;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
