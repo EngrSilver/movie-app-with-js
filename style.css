@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background: linear-gradient(
+    rgba(16, 16, 16, 0.306),
+    rgba(13, 13, 12, 0.306),
+    rgba(23, 34, 31, 0.334),
+    rgba(104, 75, 47, 0.74)
+  ); */
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* filter: brightness(80%); */
+  height: 100vh;
+}
+.hidden {
+  display: none;
+}
+
+.hero-section {
+  background-color: rgba(80, 149, 209, 0.753);
+  filter: brightness(50%);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("./images/test-movie.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+.hero-section-content h1 {
+  color: rgb(238, 44, 44);
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.random-movies-input {
+  width: 250px;
+  outline: none;
+  border: none;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  opacity: 0.4;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.859);
+  background-color: rgb(62, 56, 56);
+  color: rgb(255, 255, 255);
+}
+.random-movies-input:hover {
+  opacity: 0.6;
+}
+.random-movies-input:focus {
+  opacity: 1;
+  border: 1px solid rgb(0, 68, 255);
+}
+.submit-button {
+  padding: 7px;
+  margin-left: 20px;
+  width: 50px;
+  background-color: rgba(133, 248, 133, 0.548);
+  outline: none;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background-color: rgba(133, 248, 133, 0.816);
+}
+
+.content-section-content {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.single-movie {
+  min-width: 240px;
+  border: 1px solid rgba(128, 128, 128, 0.218);
+  padding: 5px;
+  margin-bottom: 10px;
+  box-shadow: 2px 1px 2px rgba(128, 128, 128, 0.462);
+  cursor: pointer;
+}
+.single-movie:hover {
+  opacity: 0.8;
+}
+
+.image {
+  width: 200px;
+  height: 250px;
+}
+.img {
+  width: 229px;
+  height: 236px;
+}
+.title-rating {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+.title {
+  color: rgb(155, 14, 14);
+  font-weight: 700;
+  font-size: 20px;
+}
+.line {
+  width: 70%;
+  height: 1px;
+  background-color: dimgray;
+}
+.rating-text {
+  color: rgb(11, 144, 40);
+  font-size: 30px;
+  font-weight: 800;
+}
+.year-text {
+  color: yellowgreen;
+}
+.rating-circle {
+  width: 30px;
+  height: 30px;
+  border: 2px solid green;
+
+  position: relative;
+  border-radius: 50%;
+  margin-top: 7px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-circle {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.label {
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* single movie section this is the other section, doesn't play */
+.sm-hero-section {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("./images/test-movie.jpg");
+  background-repeat: round;
+  background-size: cover;
+
+  border-bottom: 1px solid rgb(71, 71, 71);
+  padding: 60px 0 20px 20px;
+  margin-bottom: 30px;
+  background-attachment: fixed;
+}
+.movie-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 800;
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: rgb(180, 34, 34);
+  -webkit-text-stroke: 0.1px white;
+}
+.movie-desc {
+  width: 50%;
+  color: rgb(141, 141, 141);
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+.play-button {
+  width: 170px;
+  background-color: rgba(255, 20, 20, 0.801);
+  color: white;
+  font-weight: 800;
+  font-size: 40px;
+  border: 1px solid rgb(189, 15, 15);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.play-button:hover {
+  background-color: rgb(142, 36, 36);
+  color: white;
+}
+
+.style {
+  color: rgb(185, 177, 177);
+}
