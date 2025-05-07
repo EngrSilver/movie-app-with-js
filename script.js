@@ -99,7 +99,11 @@ document.addEventListener("click", function (e) {
 
         movieTitle.textContent = data.Title;
         moviePlot.textContent = data.Plot;
-        console.log(data);
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
       });
   }
 });
